@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1_E-Guru</title>
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        /* -------- Navbar --------*/
+
+        .navbar {
+            position: fixed;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            top: 2px;
+            display: flex;
+            justify-content: space-around;
+            padding: 5px;
+            background: white;
+            z-index: 100;
+        }
+        .menu-icon{
+            display: none;
+        }
+
+        .icon {
+            display: flex;
+        }
+
+        .Eguru {
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        .main_menu {
+            display: flex;
+            padding-top: 5px;
+        }
+
+        .main_menu>p {
+            padding-left: 25px;
+        }
+
+        .main_menu>p:hover {
+            color: #ffa500;
+        }
+
+        .sing_up {
+            background-color: white;
+            padding: 5px 15px;
+            border: 1px solid #000000;
+        }
+
+        /* ------- main Body -------- */
+
+        .main_content {
+            margin: 50px 0px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .part1 {
+            padding-top: 10%;
+            padding-left: 5%;
+            width: 70%;
+        }
+
+        .Heading_Main {
+            font-size: 50px;
+        }
+
+        .Heading_Sub {
+            margin-top: 20px;
+            padding-left: 10px;
+            border-left: 3px solid orange;
+        }
+
+        .bottun {
+            padding: 15px 35px;
+            margin-top: 5%;
+            margin-right: 18px;
+
+        }
+
+        .Get_button:hover {
+            background: #d13d3d;
+            color: #f0f8ff;
+            border: 0px;
+
+        }
+
+        .Orange_arrow {
+            position: relative;
+            top: -40%;
+            left: 55%;
+        }
+
+        .main-image {
+            position: relative;
+            left: 30%;
+            top: 10%;
+            z-index: 5;
+        }
+
+        .main-image-bg {
+            position: relative;
+            top: 10%;
+            right: 10%;
+            height: 25rem;
+        }
+
+        .main-image-pattern {
+            position: relative;
+            top: -43%;
+            left: 15%;
+            height: 25rem;
+        }
+
+        .green-arrow {
+            position: relative;
+            top: -35%;
+            right: 40%;
+        }
+
+        .circle {
+            position: relative;
+            top: -40%;
+            left: 10%;
+        }
+
+        .curve-arrow {
+            position: relative;
+            top: -40%;
+            right: 100%;
+        }
+
+        /*------ Footer------*/
+        .footer {
+            position: absolute;
+            top: 80%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background: #030530;
+            color: #f0f8ff;
+            padding: 20px 0px;
+        }
+
+        .footer_part1>p {
+            padding-top: 10px;
+        }
+
+        .icon_box1 {
+            background: #16a78a;
+            width: 33px;
+            padding: 3px;
+            border-radius: 5px;
+        }
+
+        .icon_box2 {
+            background: #e75714;
+            width: 30px;
+            padding: 3px 3px;
+            border-radius: 5px;
+        }
+
+        .icon_box3 {
+            background: #4d2eca;
+            width: 33px;
+            padding: 3px;
+            border-radius: 5px;
+        }
+
+        .Foot {
+            padding-top: 7px;
+        }
+
+        /*----------- Media Queries ----------*/
+
+
+        @media screen and (max-width: 600px) {
+            .navbar {}
+            .icon{
+                margin-left: 20%;
+            }
+            .main_menu {
+            display: none;
+        }
+        .sing_up {
+            
+            display: none;
+        }
+        .menu-icon{
+            display: block;
+            position: relative;
+            right: 60%;
+        }
+
+
+
+
+            /*----------- Media Queries on Footer ----------*/
+
+
+            .footer {
+                flex-direction: column;
+                text-align: center;
+                top: 60rem;
+            }
+
+            .icon_box1 {
+                position: relative;
+                left: 45%;
+            }
+
+            .icon_box2 {
+                position: relative;
+                left: 45%;
+            }
+
+            .icon_box3 {
+                position: relative;
+                left: 45%;
+            }
+
+            .footer_part1 {
+                margin-top: 10px;
+            }
+
+            .footer_part2 {
+                margin-top: 10px;
+            }
+
+            .footer_part3 {
+                margin-top: 10px;
+            }
+
+            .footer_part4 {
+                margin-top: 10px;
+            }
+
+            /*----------- Media Queries on Main Body----------*/
+
+            .main_content {
+                flex-direction: column;
+                margin: 50px 0px;
+            }
+
+            .part1 {
+                padding-top: 10%;
+                padding-left: 2%;
+                width: 100%;
+            }
+
+            .Heading_Main {
+                font-size: 40px;
+            }
+
+            .bottun {
+                padding: 15px 35px;
+                margin-top: 505px;
+                margin-right: 18px;
+
+            }
+
+            .Orange_arrow {
+                position: relative;
+                top: -24rem;
+                left: -14rem;
+
+            }
+
+            .main-image {
+                position: relative;
+                top: -24rem;
+                height: 200px;
+
+            }
+
+            .main-image-bg {
+                position: relative;
+                top: -23.7rem;
+                left: -2.5rem;
+                height: 250px;
+
+            }
+
+            .main-image-pattern {
+                position: relative;
+                top: -40.5rem;
+                left: 6.5rem;
+                height: 250px;
+            }
+
+            .green-arrow {
+                position: relative;
+                top: -35rem;
+                right: 25%;
+                height: 26px;
+            }
+
+            .circle {
+                position: relative;
+                top: -40rem;
+            }
+
+            .curve-arrow {
+                position: relative;
+                top: -23rem;
+                right: -2rem;
+                height: 90px;
+            }
+            .Get_button{
+                position: relative;
+                left: 20%;
+            }
+            .Lean_more_button{
+                position: relative;
+                left: 20%;
+            }
+
+
+
+
+
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <!--NavBar-->
+
+    <div class="navbar">
+        <div class="icon">
+            <img class="menu-icon" src="./menu-icon.png" alt="">
+            <img id="E_guru_logo" src="./logo.png" alt="M" height="30px">
+            <p class="Eguru"><b>E GURUY</b></p>
+        </div>
+        <div class="main_menu">
+            <p>Home</p>
+            <p>About Us</p>
+            <p>Features</p>
+            <p>How it Works</p>
+        </div>
+        <div class="Sign_up_botten">
+            <button class="sing_up">Sign Up</button>
+        </div>
+    </div>
+
+    <!--Mein Content-->
+
+    <div class="main_content">
+        <Div class="part1">
+            <h1 class="Heading_Main">STUDY FROM <br> HOME WITH EXPERT</h1>
+            <p class="Heading_Sub">A learning system based on formalised <br> teaching with the help of resources.</p>
+            <button class=" bottun Get_button">Get Srarted</button>
+            <button class=" bottun Lean_more_button">Learn More</button>
+            <img class="Orange_arrow" src="./orange-arrow.png" alt="">
+        </Div>
+        <Div class="part2">
+            <img class="main-image" src="./main-image.png" alt="">
+            <img class="main-image-bg" src="./main-image-bg.png" alt="">
+            <img class="main-image-pattern" src="./main-image-pattern.png" alt="">
+            <img class="green-arrow" src="./green-arrow.png" alt="">
+            <img class="circle" src="./circle.png" alt="">
+            <img class="curve-arrow" src="./curve-arrow.png" alt="" height="100px">
+
+        </div>
+
+        <!--Footer-->
+
+        <div class="footer">
+            <div class="footer_part1">
+                <h2>WHY WE ARE <br> THE BEST</h2>
+                <p>a learning system based on <br> formalised teachinhg with helpb of....</p>
+            </div>
+            <div class="footer_part2">
+                <div class="icon_box1"><img src="./vector3.png" alt=""></div>
+                <h3 class="Foot">EXPERT TEACHER</h3>
+                <p class="Foot">a learning system based <br> on formalised teachinhg</p>
+            </div>
+            <div class="footer_part3">
+                <div class="icon_box2"><img src="./vector2.png" alt=""></div>
+                <h3 class="Foot">ONLINE COURSES</h3>
+                <p class="Foot">a learning system based <br> on formalised teachinhg</p>
+            </div>
+            <div class="footer_part4">
+                <div class="icon_box3"><img src="./vector1.png" alt=""></div>
+                <h3 class="Foot">24/7 SUPORT</h3>
+                <p class="Foot">a learning system based <br> on formalised teachinhg</p>
+            </div>
+        </div>
+</body>
+
+</html>
